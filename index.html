@@ -102,7 +102,7 @@
             
             // Try JPG first, fallback to placeholder if image doesn't exist
             const img = document.createElement('img');
-            img.src = `/images/${i}.jpg`;
+            img.src = `images/${i}.jpg`;
             img.alt = `Template ${i}`;
             img.onerror = function() {
                 this.src = `https://via.placeholder.com/250x200?text=Image+${i}`;
@@ -121,4 +121,5 @@
         console.log('Meme Maker Gallery Loaded - Use ID numbers in your redemption!');
     </script>
 </body>
+
 </html>
